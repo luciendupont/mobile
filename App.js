@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { StyleSheet,Image,Text,View,Button} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>mobile</Text>
+      
+      <Image
+          source={
+            require ('mobile/assets/voiture.png')          }
+          style={{width: 200, height: 200}}
+        />  
+<Button title= "ajouter "/>
     </View>
   );
 }
